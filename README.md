@@ -1,4 +1,16 @@
 # Java Snippets
+
+## The Java Ecosystem
+A bit of history first 
+The Features  (just 7)
+	OO Paradigm 
+	The JVM: Interpretted 
+	Simplicicty
+	Dynamic 
+	Distributed 
+	RObust and secure
+	Platform Independent  
+
 ## Java Basics
 Classes 
 Objects 
@@ -8,22 +20,12 @@ Objects
 Instance Members
 	Invoking Methods 
 Static Members 
-Associations, Aggregations and Compositions 
-Tenets of Java 
 Basic Outputting and Inputting 
 
-## The Java Ecosystem
-The Factors (just 6)
-	OO Paradigm 
-	The JVM: Interpretted 
-	Simplicicty
-	Dynamic 
-	Distributed 
-	RObust and secure 
 
 ## Language Fundamentals 
 Language Basics 
-	Lexical Tokens
+Lexical Tokens
 	Identifiers 
 	Keywords 
 	Seperators 
@@ -61,25 +63,11 @@ Enumerated Types
 	using type safe enums 
 	selected methods for enum types 
 
-## Basic Basic Program
-Class Declaration
-Methods 
-	Method Declaration 
-	Statements 
-	Instance MEthods 
-	Object Reference 
-	Method Overloading 
-	Constructors 
-		Default 
-		Parameterised 
-		Overloaded 
 
-main() Method
-Parameters PAssing 
 
 ## Access Control
-Java Source File Structure 
 Packages
+imports 
 Using classes  
 
 ## Operators
@@ -134,4 +122,82 @@ Exception Handling
 	finally clause 
 Throw Statement 
 The throws clause 
-Exception Handling
+Why Exception Handling
+
+## OOP 
+Inheritance 
+	the types here 
+	relationships (is-a and has-a)
+	supertype subtypes relationships 
+Polymorphism 
+	Method Overloading 
+	Method Overriding
+		Instance Method Overriding  
+Interfaces Encapsulation  
+
+## Fundamentals Concepts 
+Abstraction
+	Hiding members
+	field hiding 
+	static method hidin
+
+## Aggregation
+
+## Generics and Collections
+ArrayList  ~ ArrayList<E> Class
+	Lists 
+	Declaring 
+	References and Constructing ArrayLists 
+	Modifying an ArrayList 
+	Querrying and ArrayList
+	Traversing an ArrayList
+	Converting an ArrayList to an Array
+	SOrting an Array List 
+	Array vs ArrayList
+
+Set Interface ~ TreeSet 
+
+Map Interface ~~ TreeMap 
+
+Deque Interface ~~ ArrayDeque 
+
+Lambda Expessions 
+	behaviour parametirisation
+	functional interfaces 
+	defining lambda expressions 
+	type checking 
+
+Date and Time Classes
+	date and time classes 
+	date classes 
+	parsing and formatting 
+	period and duration 
+
+String Manipulation 
+	String 
+	COmparing 
+	Comparing portions 
+	manipulating characters in a string 
+
+## Java GUI
+
+## Java DB Conections 
+
+## Java File I/O
+file operations 
+checking a file/directory
+deleting 
+copying 
+moving 
+watching a directory for changes 
+
+## Associations
+
+## Compositions 
+
+## Tenets of Java 
+
+
+
+
+
