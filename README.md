@@ -141,7 +141,7 @@ Abstraction
 	field hiding 
 	static method hidin
 
-## Aggregation
+## Associations (Aggregation + Composition)
 
 ## Generics and Collections
 ArrayList  ~ ArrayList<E> Class
@@ -190,13 +190,6 @@ deleting
 copying 
 moving 
 watching a directory for changes 
-
-## Associations
-
-## Compositions 
-
-## Tenets of Java 
-
 
 
 

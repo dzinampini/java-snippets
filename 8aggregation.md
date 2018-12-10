@@ -10,7 +10,7 @@ An association is said to be aggregation if both Objects can exist independently
 For example, a Team object and a Player object
 The team contains multiple players but a player can exist without a team
 
-represents a has a relationship 
+represents a has-a relationship 
 Code reuse is best achieved by aggregation
 
 ## Composition
@@ -76,37 +76,6 @@ class Department {
 	} 
 } 
 
-Institute class contains list of Department Objects. It is asoociated with Department class through its Object(s)
-class Institute 
-{ 
-	String instituteName; 
-	private List<Department> departments; 
-	
-	Institute(String instituteName, List<Department> departments) 
-	{ 
-		this.instituteName = instituteName; 
-		this.departments = departments; 
-	} 
-	
-	// count total students of all departments 
-	// in a given institute 
-	public int getTotalStudentsInInstitute() 
-	{ 
-		int noOfStudents = 0; 
-		List<Student> students; 
-		for(Department dept : departments) 
-		{ 
-			students = dept.getStudents(); 
-			for(Student s : students) 
-			{ 
-				noOfStudents++; 
-			} 
-		} 
-		return noOfStudents; 
-	} 
-	
-} 
-
 // main method 
 class GFG 
 { 
@@ -137,8 +106,6 @@ class GFG
 		// creating an instance of Institute
 		Institute institute = new Institute("BITS", departments); 
 		
-		System.out.print("Total students in institute: "); 
-		System.out.print(institute.getTotalStudentsInInstitute()); 
 	} 
 } 
 

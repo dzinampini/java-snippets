@@ -2,6 +2,7 @@
 an ordered sequence of objects
 
 
+
 ##declaring 
 List listA = new ArrayList();
 List listB = new LinkedList();
