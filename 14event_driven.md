@@ -9,6 +9,20 @@ so we have a component as waiting for event firing
 then the event happens 
 and the listener invokes an event handler with the event as an argument of the event 
 
+## methods 2 handle events in GUI
+Event Classes	Listener Interfaces
+ActionEvent	ActionListener
+MouseEvent	MouseListener and MouseMotionListener
+MouseWheelEvent	MouseWheelListener
+KeyEvent	KeyListener
+ItemEvent	ItemListener
+TextEvent	TextListener
+AdjustmentEvent	AdjustmentListener
+WindowEvent	WindowListener
+ComponentEvent	ComponentListener
+ContainerEvent	ContainerListener
+FocusEvent	FocusListener
+
 ## eg
 import java.awt.asterik;
 import java.awt.event.asterik; 

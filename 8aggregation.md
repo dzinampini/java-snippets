@@ -99,16 +99,20 @@ class GFG
 		Department CSE = new Department("CSE", cse_students);  
 		Department EE = new Department("EE", ee_students); 
 		
-		List <Department> departments = new ArrayList<Department>(); 
-		departments.add(CSE);  
-		departments.add(EE); 
-		
-		// creating an instance of Institute
-		Institute institute = new Institute("BITS", departments); 
-		
 	} 
 } 
 
+
+## eg2
+class Transaction {
+	//contain class called products 
+}
+
+class Products {
+	
+}
+
+*** transaction has-a product 
 
 ### demonstrate composition 
 import java.io.asterik; 

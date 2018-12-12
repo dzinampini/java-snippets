@@ -43,8 +43,6 @@ there is only parameterised and default constructors in Java
 ### Main Method 
 
 ### Instance Members
-
-### Static Members
 members which are defined without the STATIC keyword and are Outside any method declaration are Object specific and are known as instance variables. They are called so because their values are instance specific and are not shared among instances.
 
 #### Static Variables (why -- saves memory )
@@ -129,6 +127,6 @@ class HelloWorld {
 
 	BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 	System.out.println("Enter your username");
-	username = in.readine(); 
+	username = in.readline(); 
 
 }

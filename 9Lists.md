@@ -1,7 +1,6 @@
 # Lists 
 an ordered sequence of objects
-
-
+-can hold many data objects Integer,String, Double 
 
 ##declaring 
 List listA = new ArrayList();
@@ -113,7 +112,7 @@ Set set = new HashSet();
 set.addAll(list);
 
 ##converting list to array 
-List<String> list = new ArrayList<>();
+List<String> list = new ArrayList<String>();
 
 list.add("element 1");
 list.add("element 2");
@@ -144,6 +143,3 @@ for(Object element : list) {
 for(int i=0; i < list.size(); i++) {
     Object element = list.get(i);
 }
-
-
-

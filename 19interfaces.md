@@ -14,7 +14,7 @@ A Java interface is a bit like a class, except a Java interface can only contain
 
 ## Consider 
 interface Religion{
-	String city = "Kwekwe";
+	String city = "Kwekwe"; //static variable 
 	void pastor();
 	void location(); 
 } 
@@ -36,6 +36,3 @@ class MkobaBaptist implements Religion{
 		System.out.println("Mbizo 1");
 	}
 }
-
-?? but where exactly is the interfacing part 
-

@@ -29,7 +29,7 @@ container that has title and menu
 4. setVisible(boolean status)  
 -change the visibility 
 
-5. setBounds (position)
+5. setBounds (int x_axis_position, int y_axis_position, int width, int height) 
 -change the position 
 
 so there are 2 ways to create a frame in AWT
@@ -44,8 +44,11 @@ class First extends Frame {
 		b.setBounds(30, 100, 80, 30);
 
 		Label l = new Label ("Username"); 
-		
+		l.setBounds(30, 100, 80, 30);
+
 		add(b);
+		add(l); 
+
 		setSize(300, 300);
 		setLayout(null);
 		setVisible(true); 
@@ -90,7 +93,7 @@ doesnt follow MVC
 Java Swing 
 -patform independent
 -lightweight 
-supports puggable look and feel 
+supports pluggable look and feel 
 more powerful components such as as tables and list 
 follows mvc 
 
@@ -115,7 +118,7 @@ public class Simple extends JFrame implements ActionListener{
 
 		String column[] = {"ID", "NAME", "SALARY"}; 
 
-		JTable jt = new newJTable(data, column);
+		JTable jt = new JTable(data, column);
 		jt.setBounds(30, 40, 200, 300);
 
 		add(b); 
@@ -134,7 +137,7 @@ public class Simple extends JFrame implements ActionListener{
 		}
 
 		else if(rb2.isSelected()){
-			JOptionPane.showMessageDialog(this, "You are females");
+			JOptionPane.showMessageDialog(this, "You are female");
 		}
 	}
 	public static void main(String [] args){
@@ -144,5 +147,4 @@ public class Simple extends JFrame implements ActionListener{
 
 
 ## Layout managers in java 
-
-
+use acronomy to master at least for types ..bordered ,box , card,flow,grid

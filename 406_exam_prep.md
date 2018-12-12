@@ -15,7 +15,9 @@ class Student {
 		super (a,b);
 	}
 
-	super.method() //invoke base class method 
+  //to access super class members 
+  super.variable_name[] 
+	super.method_name() //invoke base class method 
 }
 
 # final variable 
@@ -71,6 +73,7 @@ we use the finalize() method
 
 # difference between array and array list 
 -The major difference between the two is that arrays are fixed length data structure. But, ArrayList is variable length, which means ArrayList can grow or shrink its size dynamically.nother 
+-array does not allow generics. AL allows generic data structure 
 -other difference is that while creating array you need to specify its size or insert elements into it to make sure size is specified. But for ArrayList that is optional.
 
 # advantages of array list 
@@ -117,7 +120,7 @@ p1.equals(p2);
 List<Employee> listEmployees = new ArrayList<Employee>();
 
 
-n = 5; 
+int n = 5; 
  Employee x[] = new Employee[n];
  for( int i=0;i<5;i++){
  	x[0] = new Employee("Different name", "Different surname");
@@ -153,4 +156,70 @@ public class Dzina{
 }
 }
 
+# Similarities Between Array and ArrayList
 
+1. add and get method : Performance of Array and ArrayList are similar for the add and get operations .Both operations runs in constant time.
+
+2. Duplicate elements : Both array and arraylist can contain duplicate elements.
+
+3. Null Values : Both can store null values and uses index to refer to their elements.
+
+4. Unordered :  Both does not guarantee ordered  elements.
+
+
+# Autoboxing and Unboxing in Java 
+is the automatic conversion that the Java compiler makes
+
+Autoboxing ... from the primitive types to its corresponding object wrapper class. 
+
+For example, converting an int to an Integer, a double to a Double, and so on. 
+
+If the conversion goes the other way, this is called unboxing. that is Integer to int
+
+ Here is the simplest example of autoboxing:
+
+Character ch = 'a';
+
+# security mechanisms in java 
+1. security manager (determines the resources that can be accessed by classes of a program eg. file reading and writing)
+2. bytecode verifier (check bytecode fragments for illegal code )
+3. classloader (seperates imported packages from program packages )
+
+# static initializer block 
+will be called on loading of the class, and will have no access to instance variables or methods
+static {
+    a = 10;
+    b = 20;
+ }
+
+# Non-Static Initializer block 
+on the other hand is created on object construction only, will have access to instance variables and methods
+
+# using a fully qualified reference to call a package 
+methodpaName.packageName.className objectname = new methodpaName.packageName.className(); 
+
+done in  case if there is a conflict of ClassNames, then only in that case it is advisable to go for fully qualified names.
+
+the other method is using the import statement 
+Import statements make your code more readable, since you are not cluttering the code with the complete package.
+
+# compare jdbc and odbc 
+obdbc - is for Ms. provide communication between front end applications (other than java_) and Ms DBs like Ms SQL and Access
+use pointers 
+less secure
+
+jdbc - provide comms between java and databases (oracle, mysql, msaccesss, etc ) 
+no pointers 
+more secure
+
+# copy constructor in java
+Base (int a, int b){
+  this.a = a;
+  this.b = b;
+}
+
+Sub(int c){
+  a.c = a; 
+  b.c = b; 
+  //this is a copy constructor 
+}

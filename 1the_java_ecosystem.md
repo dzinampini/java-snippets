@@ -57,7 +57,7 @@ we can also have Java byte code for web applets, android, etc
 
 ### Dynamic
 adapt to evolving environment 
-new code can be loaded on the fy without recompilation 
+new code can be loaded on the fly without recompilation 
 new features can be incorporated transparently as needed 
 
 ### Distributed
@@ -96,10 +96,10 @@ contains JRE and developement tools
 ## Java Runtime Environment 
 contains a library that provides the runtime environment 
 implementation of the JVM
-physicall exists 
-
+physicall exists                                       
+                                                                                                                                                                                                                   
 ## Java Byte Code 
 compiled program format for Java programs
 MyCode.java -> |compiler| -> MyCode.class -> |interpreter| -> Java Byte Code --> MyProgram
-** Compiler - program that converts program written in high level language into machine code that can be understood by the code 
+** Compiler - program that converts program written in high level language into machine code that can be understood by the machine 
 ** Interpreter - program that executes code written in high level langauages without firstly compiling the code into machine understood language

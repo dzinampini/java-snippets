@@ -6,7 +6,7 @@ class MysqlCon{
 public void open(){
     try{
        Class.forName("com.mysql.jdbc.Driver");
-       Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/system_java","root","");
+       Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/system_java","root","");
         stmt = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_READ_ONLY); 
     }
     catch(Exception e) {
@@ -33,11 +33,15 @@ private void btnaddActionPerformed(java.awt.event.ActionEvent evt) {
     String name = txtname.getText();
     String email = txtemail.getText();
     String major = txtaddress.getText();
+
     String sql = "INSERT INTO users (id, user, pwd) VALUES (?, ?, ?)";
+
     PreparedStatement statement = con.prepareStatement(sql);
+
     statement.setString(1, name);
     statement.setString(2, email);
     statement.setString(3, major);
+    
     int row = statement.executeUpdate();
     if (row > 0) {
         JOptionPane.showMessageDialog(null,"A new user has been created");
@@ -101,7 +105,7 @@ private void btnSearchActionPerformed(java.awt.event.ActionEvent evt) {
     open();   
 
     String sql = "SELECT * FROM users";
-    rs = stmt.executeQuery(sql);
+    String rs = stmt.executeQuery(sql);
     rs.next();
 
     String names = rs.getString("id");
@@ -191,13 +195,17 @@ The thin driver converts JDBC calls directly into the vendor-specific database p
 
 ## JDBC Statements 
 Statement   
+can only be executed once 
 Use the for general-purpose access to your database. Useful when you are using static SQL statements at runtime. The Statement interface cannot accept parameters.
 
-PreparedStatement   
+PreparedStatement 
+can be executed many times 
+can have parameters  
 Use the when you plan to use the SQL statements many times. 
 The PreparedStatement interface accepts input parameters at runtime.
 
-CallableStatement   
+CallableStatement  
+ 
 Use the when you want to access the database stored procedures. 
 The CallableStatement interface can also accept runtime input parameters.
 

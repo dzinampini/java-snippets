@@ -47,4 +47,38 @@ Java does not support multiple inheritance
 3. constructors are not inherited 
 4. initialiser blocks are not inherited 
 5. one subclass can only extend one super class 
-n
+
+
+## inheritance with same package and with different package 
+package package1;
+
+public class MyClass1 {
+    public void tryMePublic() { System.out.println("I'm public"); }
+    protected void tryMeProtected() { System.out.println("I'm protected"); }
+    void tryMePackage() { System.out.println("I'm package"); }
+}
+
+//Children class in the same package
+package package1;
+public class Class2 extends MyClass1 {
+    public void doNow() {
+        tryMePublic(); // OK
+        tryMeProtected(); // OK
+        tryMePackage(); // OK
+    }    
+}
+
+
+/// Children class in different package
+package package2;
+import package1.MyClass1;
+
+public class Class3 extends MyClass1 {
+    public void doNow() {
+        MyClass1 c = new MyClass1();
+        c.tryMeProtected() // ERROR, because only public methods are allowed to be called on class instance, whereever you are
+        tryMePublic(); // OK
+        tryMeProtected(); // OK
+        tryMePackage(); // ERROR
+    }    
+}
